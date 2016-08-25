@@ -18,9 +18,9 @@ There are two agent groups, each trained to handle a particular call type. Howev
 ![alt text](https://s13.postimg.io/bd7s3zq2f/2016_08_25_14_33_48_Startowa.png)
 
 #Settings Menu - Subjects for Agents - Timings
-![alt text](https://postimg.org/image/nt4hxqjeb/)
+![alt text](https://s13.postimg.io/5qbf6injr/2016_08_25_14_31_27_Startowa.png)
 
 #Run with settings paramteres
-![alt text](https://postimg.org/image/wy89duxf7)
+![alt text](https://s13.postimg.io/ju2p165dj/2016_08_25_14_38_18_Centrum_akcji.png)
 
 
