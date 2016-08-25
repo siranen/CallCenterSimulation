@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE Simulation [
+  <!ELEMENT Simulation (SimulationSettings, ProductTypesList, SalesRepTypesList)>
+    <!ELEMENT SimulationSettings (CallArrivalMultiplier, SwitchDelayMultiplier, MaxQueueLength, SingleQueueLength, BeginTime, Duration, ExcessiveWait)>
+      <!ELEMENT CallArrivalMultiplier (#PCDATA)>
+      <!ELEMENT SwitchDelayMultiplier (#PCDATA)>
+      <!ELEMENT MaxQueueLength (#PCDATA)>
+      <!ELEMENT SingleQueueLength (#PCDATA)>
+      <!ELEMENT BeginTime (Hours, Minutes, Seconds)>
+      <!ELEMENT Duration (Days, Hours, Minutes, Seconds)>
+      <!ELEMENT ExcessiveWait (Hours, Minutes, Seconds)>
+      <!ELEMENT Days (#PCDATA)>
+      <!ELEMENT Hours (#PCDATA)>
+      <!ELEMENT Minutes (#PCDATA)>
+      <!ELEMENT Seconds (#PCDATA)>
+    <!ELEMENT ProductTypesList (ProductType*)>
+      <!ELEMENT ProductType (TypeName, ProductTypeProbability, ProcessingDelayMultiplier)>
+      <!ATTLIST ProductType id ID #REQUIRED>
+      <!ELEMENT TypeName (#PCDATA)>
+      <!ELEMENT ProductTypeProbability (#PCDATA)>
+      <!ELEMENT ProcessingDelayMultiplier (#PCDATA)>
+    <!ELEMENT SalesRepTypesList (SalesRepType*)>
+      <!ELEMENT SalesRepType (RepTypeName, NumberOfReps, HandlesList)>
+        <!ELEMENT RepTypeName (#PCDATA)>
+        <!ELEMENT NumberOfReps (#PCDATA)>
+        <!ELEMENT HandlesList (HandleableProductType+)>
+          <!ELEMENT HandleableProductType EMPTY>
+            <!ATTLIST HandleableProductType productTypeID IDREF #REQUIRED>
+]>
+<Simulation>
+  <SimulationSettings>
+    <CallArrivalMultiplier>0</CallArrivalMultiplier>
+    <SwitchDelayMultiplier>0</SwitchDelayMultiplier>
+    <MaxQueueLength>0</MaxQueueLength>
+    <SingleQueueLength>false</SingleQueueLength>
+    <BeginTime>
+      <Hours>0</Hours>
+      <Minutes>0</Minutes>
+      <Seconds>0</Seconds>
+    </BeginTime>
+    <Duration>
+      <Days>0</Days>
+      <Hours>0</Hours>
+      <Minutes>0</Minutes>
+      <Seconds>0</Seconds>
+    </Duration>
+    <ExcessiveWait>
+      <Hours>0</Hours>
+      <Minutes>0</Minutes>
+      <Seconds>0</Seconds>
+    </ExcessiveWait>
+  </SimulationSettings>
+  <ProductTypesList>
+  </ProductTypesList>
+  <SalesRepTypesList>
+  </SalesRepTypesList>
+</Simulation>
