@@ -15,10 +15,10 @@ A model of a call center with one type of agents with different skills and many 
 There are two agent groups, each trained to handle a particular call type. However the agents are also cross-trained so that they can handle calls of different type, yet less efficiently.  The logic for call routing is the following: a call is routed to the “native” agent, if there is one available; otherwise, the call is routed to the “alien” agent, again if the latter is idle. The output metrics in this model are the queue lengths and “service levels” for both call types. All parameters can be changed on-the-fly, including the routing options.
 
 #Settings Menu - Schedule / Agents / Timings
-![alt text](https://s13.postimg.io/bd7s3zq2f/2016_08_25_14_33_48_Startowa.png)
-
-#Settings Menu - Subjects for Agents - Timings
 ![alt text](https://s13.postimg.io/5qbf6injr/2016_08_25_14_31_27_Startowa.png)
+
+#Settings Menu - Product Types / Agents that can handle Products / Timings
+![alt text](https://s13.postimg.io/bd7s3zq2f/2016_08_25_14_33_48_Startowa.png)
 
 #Run with settings paramteres
 ![alt text](https://s13.postimg.io/ju2p165dj/2016_08_25_14_38_18_Centrum_akcji.png)
